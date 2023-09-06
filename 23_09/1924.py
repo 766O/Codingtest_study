@@ -20,3 +20,9 @@ result=['SUN','MON','TUE','WED','THU','FRI','SAT']
 
 
 print(result[total_day%7])
+
+'''
+조건문 설정
+띄어쓰기 포함되어있는 문자열 받은 후
+필요한 정수 따로 따로 꺼내기
+'''
