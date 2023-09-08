@@ -1,3 +1,4 @@
+#Bottom - up
 import sys
 
 num=int(input())
@@ -26,6 +27,33 @@ for i in range(4,num+1):
 
 
 print(solved[num])
+
+#Top - down
+import sys
+input=sys.stdin.readline
+num=int(input())
+cnt=0
+
+solved={0:0 , 1:0 , 2:1 , 3:1}
+
+def dp(n):
+    if n in list(solved.keys()):
+        return solved[n]
+    
+    if(n%6==0):
+        solved[n]=min(dp(n//3) , dp(n//2)) +1
+    elif(n%3==0):
+        solved[n]=min(dp(n//3) , dp(n-1)) +1
+    elif(n%2==0):
+        solved[n]=min(dp(n//2) , dp(n-1)) +1
+    else:
+        solved[n]=dp(n-1) +1
+        
+    return solved[n]
+        
+
+print(dp(num))
+#print(solved)
 
 # 1463번 / DP 문제
 
