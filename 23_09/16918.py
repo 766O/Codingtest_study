@@ -6,8 +6,6 @@ check=[[0]*C for _ in range(R)]
 for i in range(R):
     check[i]=list((input()))
 
-sec=0
-
 dx=[1,0,-1,0]
 dy=[0,1,0,-1]
 
