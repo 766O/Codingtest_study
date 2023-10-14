@@ -79,3 +79,4 @@ while(1):
 # 다시 공기면 탐색 , 치즈면 melt 에 모아두었다가 BFS 종료전에 녹여서 graph 변경시키고
 # 밖에 나와서 녹은갯수만큼 빼주고 반복
 
+https://velog.io/@hygge/Python-%EB%B0%B1%EC%A4%80-2636-%EC%B9%98%EC%A6%88-BFS
