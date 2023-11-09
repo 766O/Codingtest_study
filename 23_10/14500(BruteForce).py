@@ -3,7 +3,7 @@ N,M=map(int,input().split())
 graph=[[0]*M for _ in range(N)]
 
 for i in range(N):
-    graph[i]=list(map(int,input().split()))
+    graph[i]=list(map(int,input().split())) 
     
 direction=[
     
